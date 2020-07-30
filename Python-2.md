@@ -6,7 +6,7 @@
 ```python
 x = int(input("Enter any number ")) 
 if x%3 ==0 and x%5 ==0: 
-  print("Consultadd Python Training”")
+  print("Consultadd Python Training")
 if x%3 ==0: 
   print("Consultadd")  
 if x%5 ==0:  
