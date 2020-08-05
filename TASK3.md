@@ -7,20 +7,25 @@ My_list= [2,3.5,'Apple',5+3j,'Tesla', 5.9,6, 3+2j, 'Vishal',10  ]
 My_list= ['apple', 'orange', 'grapes', 'mango','berries']
 My_list[:]
 ['apple', 'orange', 'grapes', 'mango', 'berries']
+
 My_list= ['apple', 'orange', 'grapes', 'mango','berries']
->>> My_list[1:4]
+My_list[1:4]
 ['orange', 'grapes', 'mango']
+
 My_list= ['apple', 'orange', 'grapes', 'mango','berries']
->>> My_list[:3]
+My_list[:3]
 ['apple', 'orange', 'grapes']
+
 My_list= ['apple', 'orange', 'grapes', 'mango','berries']
->>> My_list[2:]
+My_list[2:]
 ['grapes', 'mango', 'berries']
->>> My_list= ['apple', 'orange', 'grapes', 'mango','berries']
->>> My_list[1:4:2]
+
+My_list= ['apple', 'orange', 'grapes', 'mango','berries']
+My_list[1:4:2]
 ['orange', 'mango']
->>> My_list= ['apple', 'orange', 'grapes', 'mango','berries']
->>> My_list[::-1]
+
+My_list= ['apple', 'orange', 'grapes', 'mango','berries']
+My_list[::-1]
 ['berries', 'mango', 'grapes', 'orange', 'apple']
 
 #### 3. Write a program to get the sum and multiply of all the items in a given list. 
@@ -77,4 +82,36 @@ Sample_data= [[1,3,5,7,9,10],[2,4,6,8]]
 y=Sample_data[0][:-1]+Sample_data[1]
 print(y)
 
- 
+ #### 8. Create a new dictionary by concatenating the following two dictionaries: 
+a={1:10,2:20} 
+b={3:30,4:40} 
+Expected Result: {1:10,2:20,3:30,4:40} 
+
+a={1:10,2:20} 
+b={3:30,4:40} 
+c= {**a,**b}
+print(c)
+#### 9. Create a dictionary that contains a number (between 1 and n) in the form(x,x*x). 
+Sample data (n=5) 
+Expected Output: {1:1,2:4,3:9,4:16,5:25} 
+
+n=5
+d = {}
+for x in range(1,n+1):
+    d[x]=x*x
+print(d) 
+#### 10. Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number. Suppose the following input is supplied to the program: 
+
+34,67,55,33,12,98 
+
+The output should be: 
+
+[‘34’,’67’,’55’,’33’,’12’,’98’] 
+
+(‘34’,’67’,’55’,’33’,’12’,’98’) 
+
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)
